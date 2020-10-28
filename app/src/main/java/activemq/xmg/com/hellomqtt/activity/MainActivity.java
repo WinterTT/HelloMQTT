@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         ButterKnife.bind(this);
         setListener();
     }
@@ -33,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
         btnStartConnect.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                //提交测试
                 MQService.actionStart(MainActivity.this);
             }
         });
